@@ -1,0 +1,10 @@
+.Register-card {
+  min-width: 150px;
+  max-width: 500px;
+  margin: 10% auto;
+  background-color: whitesmoke;
+}
+.reg-in {
+  margin: auto;
+  width: 90%;
+}

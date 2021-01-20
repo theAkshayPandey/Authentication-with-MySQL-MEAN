@@ -1,0 +1,23 @@
+<mat-card class="login-card">
+    <mat-card-header>
+        <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-form-field style="width: 100%;">
+            <input matInput name="email" [(ngModel)]="email" placeholder="Email" type="email" required>
+        </mat-form-field>
+        <mat-form-field style="width: 100%;">
+            <input matInput name="password" [(ngModel)]="password" placeholder="Password" type="password" required>
+            <mat-error *ngIf="error">{{error}}</mat-error>
+        </mat-form-field>
+
+        <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="login()">Login</button> &nbsp;
+            <span>&nbsp; Create a new account ..? &nbsp; <a routerLink="/auth/register"
+                    routerLinkActive="active">Register</a> here</span>
+        </mat-card-actions>
+
+    </mat-card-content>
+
+
+</mat-card>
